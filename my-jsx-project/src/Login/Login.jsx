@@ -1,13 +1,18 @@
 import React from "react";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
-import { useForm } from "react-hook-form";
 import "./Login.css";
 
 const Login = () => {
     return (
-        <div></div>
+        <div className="loginSection">
+            <div className="LoginForm">
+                <form action="">
+                    <label htmlFor="Email"></label>
+                    <input className="LoginEmailInput LoginInput" type="text" id="LoginFormEmail" name="Email" placeholder="Email" style={{ marginBottom: "10px" }} /> <br />
+                    <label htmlFor="Password"></label>
+                    <input className="LoginPasswordInput LoginInput" type="text" id="LoginFormPassword" name="Password" placeholder="Password" style={{ marginBottom: "10px" }} /> <br />
+                </form>
+            </div>
+        </div>
     );
 };
 

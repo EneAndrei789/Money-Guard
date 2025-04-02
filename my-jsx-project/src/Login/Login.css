@@ -1,0 +1,16 @@
+.loginSection {
+  background-color: #101010 !important;
+  color: white;
+  height: 95vh;
+  width: 99vw;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Background images */
+  background-image: url("./LoginImages/CoinsLeftSide.png"),
+    url("./LoginImages/CoinsRightSide.png");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+}
