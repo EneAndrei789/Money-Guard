@@ -5,12 +5,15 @@ const Login = () => {
     return (
         <div className="loginSection">
             <div className="LoginForm">
+                <div className="LoginHeader">
+                    <h1>Money Guard</h1>
+                </div>
                 <form action="">
-                    <label htmlFor="Email"></label>
+                    <label htmlFor="Email" style={{borderBottom: "10px"}}></label>
                     <input
                         className="LoginEmailInput LoginInput"
                         type="text"
-                        id="LoginFormEmail"
+                        id="Email"
                         name="Email"
                         placeholder="Email"
                         style={{ marginBottom: "10px", background: "transparent" }}/>
@@ -19,7 +22,7 @@ const Login = () => {
                     <input
                         className="LoginPasswordInput LoginInput"
                         type="text"
-                        id="LoginFormPassword"
+                        id="Password"
                         name="Password"
                         placeholder="Password"
                         style={{ marginBottom: "10px", background: "transparent" }}/>
