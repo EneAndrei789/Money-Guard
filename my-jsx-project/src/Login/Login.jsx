@@ -2,6 +2,12 @@ import React from "react";
 import "./Login.css";
 
 const Login = () => {
+
+    const handleLogin = (e) => {
+        event.preventDefault();
+        console.log("Login button clicked");
+    };
+
     return (
         <div className="loginSection">
             <div className="LoginForm">
@@ -12,16 +18,17 @@ const Login = () => {
                     <label htmlFor="Email" style={{borderBottom: "10px"}}></label>
                     <input
                         className="LoginEmailInput LoginInput"
-                        type="text"
+                        type="email"
                         id="Email"
                         name="Email"
                         placeholder="Email"
+                        required
                         style={{ marginBottom: "10px", background: "transparent" }}/>
                     <br/>
                     <label htmlFor="Password"></label>
                     <input
                         className="LoginPasswordInput LoginInput"
-                        type="text"
+                        type="password"
                         id="Password"
                         name="Password"
                         placeholder="Password"
@@ -29,21 +36,32 @@ const Login = () => {
                     <br/>
                     <div
                         className="LoginButtons"
-                        style={{ display: "flex", justifyContent: "space-between" }}>
-                        <button
+                        style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
+                        <button className="LoginButtonSection" onClick={handleLogin} 
                             style={{
-                                height: "30px",
+                                marginTop: "50px",
+                                marginBottom: "10px",
+                                height: "50px",
                                 borderRadius: "10px",
-                                width: "120px",
-                            }}>
+                                width: "250px",
+                                background: 'linear-gradient(90deg, #FFC727, #9E40BA, #7000FF)',
+                                border: "none",
+                                color: "white",
+                                fontWeight: "400",
+                                fontFamily: "Poppins",
+                                fontSize: "20px",}}>
                             Login
                         </button>
-                        <button
+                        <button className="LoginButtonSection" onClick={handleLogin}
                             style={{
-                                height: "30px",
+                                height: "50px",
+                                width: "250px",
                                 borderRadius: "10px",
-                                width: "120px",
-                            }}>
+                                border: "none",
+                                color: "black",
+                                fontWeight: "400",
+                                fontFamily: "Poppins",
+                                fontSize: "20px",}}>
                             Register
                         </button>
                     </div>
