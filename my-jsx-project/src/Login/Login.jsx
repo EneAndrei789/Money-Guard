@@ -1,12 +1,24 @@
 import React from "react";
 import "./Login.css";
+import { usenavigate } from "react-router-dom";
 
 const Login = () => {
+
+    const navigate = usenavigate();
+
+    // REGISTER BUTTON FUNCTION
+
+    const navigateToRegister = (e) => {
+        navigate("./Register");
+        console.log("Register button clicked!");
+        event.preventDefault();
+    }
 
     const handleLogin = (e) => {
         event.preventDefault();
         console.log("Login button clicked");
     };
+
 
     return (
         <div className="loginSection">
@@ -52,7 +64,7 @@ const Login = () => {
                                 fontSize: "20px",}}>
                             Login
                         </button>
-                        <button className="LoginButtonSection" onClick={handleLogin}
+                        <button className="LoginButtonSection" onClick={navigateToRegister}
                             style={{
                                 height: "50px",
                                 width: "250px",
