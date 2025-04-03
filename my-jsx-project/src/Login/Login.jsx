@@ -1,24 +1,17 @@
 import React from "react";
 import "./Login.css";
-import { usenavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
 
-    const navigate = usenavigate();
+    console.log("Login component loaded") // This will log when the component is loaded
 
-    // REGISTER BUTTON FUNCTION
+    const  navigate = useNavigate();
 
-    const navigateToRegister = (e) => {
-        navigate("./Register");
-        console.log("Register button clicked!");
-        event.preventDefault();
+    const openHomeSection = () => {
+        console.log("Login button clicked") // This will log when the button is clicked
+        navigate("/homeSection"); // Navigate to the HomeSection component
     }
-
-    const handleLogin = (e) => {
-        event.preventDefault();
-        console.log("Login button clicked");
-    };
-
 
     return (
         <div className="loginSection">
@@ -49,7 +42,7 @@ const Login = () => {
                     <div
                         className="LoginButtons"
                         style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
-                        <button className="LoginButtonSection" onClick={handleLogin} 
+                        <button type="button" className="LoginButtonSection" onClick={openHomeSection}
                             style={{
                                 marginTop: "50px",
                                 marginBottom: "10px",
@@ -64,7 +57,7 @@ const Login = () => {
                                 fontSize: "20px",}}>
                             Login
                         </button>
-                        <button className="LoginButtonSection" onClick={navigateToRegister}
+                        <button className="LoginButtonSection"
                             style={{
                                 height: "50px",
                                 width: "250px",

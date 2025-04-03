@@ -1,0 +1,10 @@
+.HomeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  background-color: black;
+  height: 100vh; /* Ensure it covers the entire viewport height */
+  width: 100vw;
+}
