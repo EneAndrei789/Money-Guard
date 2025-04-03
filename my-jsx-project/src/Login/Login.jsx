@@ -8,9 +8,18 @@ const Login = () => {
 
     const  navigate = useNavigate();
 
+    // FUNCTION TO NAVIGATE TO HOME SECTION
+
     const openHomeSection = () => {
         console.log("Login button clicked") // This will log when the button is clicked
         navigate("/homeSection"); // Navigate to the HomeSection component
+    }
+
+    // FUNCTION TO NAVIGATE TO REGISTER SECTION
+
+    const openRegisterSection = () => {
+        console.log("Register button clicked") 
+        navigate("/registerSection");
     }
 
     return (
@@ -57,7 +66,7 @@ const Login = () => {
                                 fontSize: "20px",}}>
                             Login
                         </button>
-                        <button className="LoginButtonSection"
+                        <button className="LoginButtonSection" type="button" onClick={openRegisterSection}
                             style={{
                                 height: "50px",
                                 width: "250px",

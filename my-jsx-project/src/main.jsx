@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Login />} />
         
         {/* Define the route for the register page */}
-        <Route path="/register" element={<Register />} />
+        <Route path="/registerSection" element={<Register />} />
         
         {/* Define the route for the home section */}
         <Route path="/homeSection" element={<HomeSection />} />

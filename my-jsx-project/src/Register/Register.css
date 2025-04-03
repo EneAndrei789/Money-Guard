@@ -1,0 +1,38 @@
+.registerSection {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  background: linear-gradient(
+    150deg,
+    rgba(0, 15, 36, 1) 0%,
+    rgba(41, 52, 84, 1) 15%,
+    rgb(29, 37, 100) 31%,
+    rgb(85, 31, 132) 48%,
+    rgb(99, 33, 134) 67%,
+    rgb(78, 6, 129) 82%,
+    rgb(49, 9, 87) 100%
+  );
+  height: 100vh; /* Ensure it covers the entire viewport height */
+  width: 100vw;
+  color: white;
+  border: 3px solid black;
+  /* background-image: url("./RegisterImages/97a6e89892bb4b2cbde1d25f9105cda6.png");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover; */
+  /* padding: 200px; */
+}
+
+.registerForm {
+  padding: 200px;
+  backdrop-filter: blur(20px); /* Increased blur from 15px to 20px */
+  box-shadow: 2px 5px 20px 11px rgba(0, 0, 0, 0.3);
+}
+
+.registerHeader {
+  font-weight: 700;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 100px;
+}

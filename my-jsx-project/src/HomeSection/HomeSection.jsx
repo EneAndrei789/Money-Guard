@@ -9,7 +9,8 @@ const HomeSection = () => {
   return (
     <div className='HomeSection'>
         <div className='navbar'>
-
+            <h2>Name</h2>
+            <h2>Exit</h2>
         </div>
         <div>
             <div className='LeftSide'></div>
